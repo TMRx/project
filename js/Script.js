@@ -57,20 +57,40 @@
 // alert (`привет, ${user}`);
 
 
-console.log('arr' + "-object");
-let incr = 5,
-    decr = 10;
-// incr++;
-// decr--;
-console.log(++incr);
-console.log(--decr);
-console.log(5%2);
-console.log(2+2*2!=8);
+// console.log('arr' + "-object");
+// let incr = 5,
+//     decr = 10;
+// // incr++;
+// // decr--;
+// console.log(++incr);
+// console.log(--decr);
+// console.log(5%2);
+// console.log(2+2*2!=8);
 
-const isChecket=true,
-        isClose = false;
+// const isChecket=true,
+//         isClose = false;
 
-console.log(isChecket || !isClose);
+// console.log(isChecket || !isClose);
+
+    //ex1
+const NumberOfFilms = +prompt('Сколько фильмов вы уже смотрели', '');
 
 
+    //ex2
+const PersonalMoviDB = {
+    count:NumberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    private: false
+};
+    
+    //ex3
+const a = prompt('один из просмотреных фильмов', ''),
+     b = prompt('на сколько оцените его ' ,''),
+     c = prompt('один из просмотреных фильмов', ''),
+     d = prompt('на сколько оцените его ' ,'');
+ 
 
+PersonalMoviDB.movies[a] = b;
+console.log(PersonalMoviDB);
